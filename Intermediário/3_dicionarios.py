@@ -65,3 +65,7 @@ d2 = copy.deepcopy(d1)
 d2['c3'][1]=999
 print(d2)
 print(d1)
+
+#pop exclui um atributo do dic
+#popitem exclui o ultimo atributo do dic
+#update adiciona chaves ou altera chaves
