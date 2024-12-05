@@ -1,3 +1,4 @@
+import copy
 #Dicionários 
 #Coisas que podem ter atributos
 #Chave-Valor: Chave=indice
@@ -38,3 +39,29 @@ for chave, valor in pessoa.items():
 
 pessoa.setdefault('idade', 18)
 print(pessoa['idade'])
+
+#Copy e shallow copy
+d1 = {
+    'c1': 10,
+    'c2': 20,
+    'c3': [1, 2, 3, 4]
+}
+
+d2 = d1 #nao copia d1 para d2, mas sim aponta para o mesmo lugar na memoria
+#se eu alterar d2 eu alterarei d1:
+d2['c1'] = 1000
+print(d1['c1'])
+
+#com o copy ele copia para outra var, mas nao faz a copia de valores mutaveis:lista,dic,tuplas,etc.
+d2 = d1.copy()
+d2['c1'] = 5
+d2['c3'][2] = 999
+print(d2)
+print(d1)
+
+#para fazer um deep copy: import copy e copy.deepcopy()
+
+d2 = copy.deepcopy(d1)
+d2['c3'][1]=999
+print(d2)
+print(d1)
