@@ -56,6 +56,6 @@ def executa_f(funcao, *args):
 saudacao2 = saudacao
 
 print(executa_f(saudacao, 'Boa noite', 'Bruno'))
-print(executa_f(saudacao2, 'Bom dia', 'kellven'))
+print(executa_f(saudacao, 'Bom dia', 'kellven'))
 
 
