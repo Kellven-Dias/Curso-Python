@@ -5,3 +5,7 @@ Scripts = bin nos sistemas Unix
 source venv/Scripts/activate (ativar em Unix)
 
 selecionar o interpretador venv para executar (canto inferior direito ex: 3.12.3('venv':venv))
+pip install 'modulo'
+pip uninstall 'modulo'
+pip freeze = visualizar modulos instalados
+pip freeze > requirements.txt cria um arquivo para exportar o ambiente virtual
