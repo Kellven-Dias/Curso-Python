@@ -9,3 +9,4 @@ pip install 'modulo'
 pip uninstall 'modulo'
 pip freeze = visualizar modulos instalados
 pip freeze > requirements.txt cria um arquivo para exportar o ambiente virtual
+pip install -r requirements.txt (importa)
