@@ -1,0 +1,7 @@
+python -m venv venv
+venv\Scripts\activate ou . venv/Scripts/activate (UNIX)
+deactivate
+Scripts = bin nos sistemas Unix
+source venv/Scripts/activate (ativar em Unix)
+
+selecionar o interpretador venv para executar (canto inferior direito ex: 3.12.3('venv':venv))
