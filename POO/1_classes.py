@@ -6,8 +6,17 @@
 
 class Pessoa:
     def __init__(self, nome, sobrenome):
-        self.nome = nome
+        self._nome = nome
         self.sobrenome = sobrenome
+
+    #encapsulamento
+    @property
+    def nome(self):
+        return self._nome
+
+    def nome(self, nome):
+        self._nome = nome
+    
 
     def falar(self): #metodo
         print(f'{self.nome} está falando')
