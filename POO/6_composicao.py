@@ -1,7 +1,7 @@
 #composicao é uma especialização da agregação
 #os objetos relacionados precisam estar juntos
 #se excluir o pai, todas as ref serão apagadas também
-
+#um objeto E DONO DE outro objeto
 class Cliente:
     def __init__(self, nome):
         self.nome = nome

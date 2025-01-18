@@ -2,7 +2,7 @@
 #os objetos relacionados pela agregacao geram mais valor quando estao agregados
 #ex: carrinho de compras e produtos
 #os dois podem existir sozinhos, mas juntos fazem mais sentido
-
+#um objeto TEM outro obj
 class Carrinho:
     def __init__(self):
         self._produtos = []
