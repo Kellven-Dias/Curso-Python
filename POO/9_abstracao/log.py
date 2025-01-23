@@ -4,9 +4,11 @@ LOG_FILE = Path(__file__).parent / 'log.txt'
 
 
 class Log:
+    #metodo abstrato: Devem ser implementados nas subclasses
     def _log(self, msg):
         raise NotImplementedError('Implemente o método log')
     
+    #metodos concretos
     def log_error(self, msg):
         self._log(f'Error: {msg}')
 
